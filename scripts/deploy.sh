@@ -6,6 +6,7 @@ REMOTE=$(git remote get-url origin)
 npm run build
 cd dist
 touch .nojekyll
+find . -name .DS_Store -delete
 rm -rf .git
 git init -q -b gh-pages
 git add -A
